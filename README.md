@@ -1,7 +1,7 @@
 
 # Aplicação teste
 
-Esta aplicação foi/vai seru usada na presentaçãod e testes no canal do @DevCia
+Esta aplicação foi/vai seru usada na presentaçãod e testes no canal do @devcia
 https://www.youtube.com/watch?v=jSkO9jamhJA
 
 ## Sumário
