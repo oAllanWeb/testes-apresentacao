@@ -1,0 +1,69 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "4.2.4",
+    "@testing-library/react": "9.3.2",
+    "@testing-library/user-event": "7.1.2",
+    "axios": "^0.21.0",
+    "babel-loader": "8.1.0",
+    "dinero.js": "^1.8.1",
+    "formik": "^2.2.6",
+    "moment": "^2.29.1",
+    "prop-types": "^15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-svg": "^11.1.4",
+    "react-toast-notifications": "^2.4.0",
+    "storybook": "^6.1.9",
+    "styled-components": "^5.2.1",
+    "yup": "^0.32.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "cypress:test": "./node_modules/cypress/bin/cypress run",
+    "cypress:open": "./node_modules/cypress/bin/cypress open",
+    "cy:test": "yarn clear:db && npm-run-all -p server start cypress:test --race",
+    "cy:open": "npm-run-all -p clear:db server start cypress:open",
+    "dev": "npm-run-all -p server start",
+    "clear:db": "cp ./server/db.example.json ./server/db.json",
+    "lint": "eslint src --max-warnings=0",
+    "eject": "react-scripts eject",
+    "server": "json-server ./server/db.json --port 9000 --middlewares ./server/status-middleware.js",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.1.9",
+    "@storybook/addon-essentials": "^6.1.9",
+    "@storybook/addon-links": "^6.1.9",
+    "@storybook/node-logger": "^6.1.9",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.9",
+    "cypress": "^7.7.0",
+    "eslint": "6.8.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "json-server": "0.16.2",
+    "npm-run-all": "^4.1.5"
+  }
+}
