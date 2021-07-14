@@ -1,7 +1,8 @@
 
 # Aplicação teste
 
-Esta aplicação foi/vai seru usada na presentaçãod e testes no canal do @devcia
+Esta aplicação foi/vai ser usada na presentaçãod e testes no canal do [@devcia](https://github.com/DevCia)
+
 https://www.youtube.com/watch?v=jSkO9jamhJA
 
 ## Sumário
